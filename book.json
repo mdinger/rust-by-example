@@ -1,6 +1,4 @@
 {
     "plugins": ["rust-playpen"],
-    "pluginsConfig": {
-        "rust-playpen": {}
-    }
+    "pluginsConfig": { "rust-playpen": {} }
 }

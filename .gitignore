@@ -1,4 +1,6 @@
 bin/*
 stage/*
 node_modules/*
+node_modules/*/*
 !node_modules/gitbook-plugin-rust-playpen
+_book/*
