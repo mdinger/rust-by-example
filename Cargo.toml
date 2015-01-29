@@ -9,3 +9,7 @@ authors = ["Jorge Aparicio <japaricious@gmail.com>",
 
 rustc-serialize = "*"
 regex = "*"
+
+[[example]]
+name = "attribute_cfg_custom"
+path = "examples/attribute/cfg/custom/custom.rs"

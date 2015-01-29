@@ -1,4 +1,4 @@
-#[cfg(some_condition)]
+#[cfg(not(test))]
 fn conditional_function() {
     println!("condition met!")
 }
