@@ -1,12 +1,13 @@
 [
-    { "id": "hello", "title": "Hello World", "children": null },
-    { "id": "print", "title": "Formatted print", "children": [
-        { "id": "print_debug", "title": "Debug", "children": null },
-        { "id": "print_display", "title": "Display", "children": null },
-        { "id": "fmt", "title": "Formatting", "children": null }
-    ] },
-    { "id": "comment", "title": "Comments", "children": [
-        { "id": "doc_comment", "title": "Doc Comments", "children": null }
+    { "id": "hello", "title": "Hello World", "children": [
+        { "id": "comment", "title": "Comments", "children": [
+            { "id": "doc_comment", "title": "Doc Comments", "children": null }
+        ] },
+        { "id": "print", "title": "Formatted print", "children": [
+            { "id": "print_debug", "title": "Debug", "children": null },
+            { "id": "print_display", "title": "Display", "children": null },
+            { "id": "fmt", "title": "Formatting", "children": null }
+        ] }
     ] },
     { "id": "primitives", "title": "Primitives", "children": [
         { "id": "literals", "title": "Literals and operators", "children": null },
