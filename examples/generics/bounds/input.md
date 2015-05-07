@@ -1,15 +1,29 @@
-When working with generics, the type parameters (e.g. `Ty`) may use traits
-(e.g. `Tr`) as *bounds* (e.g. `Ty: Tr`, which reads as: `Ty` must implement the
-`Tr` trait). Bounding has two effects:
+When working with generics, the types often must use traits as *bounds* to
+stipulate what functionality a type implements. For example, the following
+example uses the trait `Display` to print and so it requires `T` to be bound
+by `Display`; that is, `T` *must* implement `Display`.
 
-* Generics instances (`let ty: Ty = (...)`) can now access the methods
-  (`ty.tr()`) of the traits specified in the bounds.
-* The generic can only be specialized for type parameters that conform to the
-  bounds.
+```rust
+// This function reads: `printer` takes generic type `T` which
+// must implement trait `Display`.
+fn printer<T: Display>(t: T) {
+    println!("{}", t);
+}
+```
 
-Bounds are typically applied in one of two ways:
-
-* At the first instance of the type
-* In a `where` clause which directly precedes the `{` in the `impl`
+Bounding allows generic instances to access the methods of the traits
+specified in the bounds. For example:
 
 {bounds.play}
+
+Bounding also restricts the generic from being specialized to
+types that do *not* conform to the bounds. That is:
+
+```rust
+struct S<T: Display>(T);
+
+// Error! `Vec<T>` does not implement `Display`. This
+// specialization will fail.
+let s = S(vec![1]);
+```
+
