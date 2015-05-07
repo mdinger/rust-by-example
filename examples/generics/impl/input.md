@@ -1,5 +1,4 @@
-Implementations can also be made generic. Generally, `impl` is followed by
-the type `<Type>`, although it is not a strict requirement.
+Similar to functions, implementations require care to remain generic.
 
 ```rust
 struct S; // A null struct
