@@ -84,6 +84,7 @@
     ] },
     { "id": "generics", "title": "Generics", "children": [
         { "id": "impl", "title": "Implementation", "children": null },
+        { "id": "bounds", "title": "Bounds", "children": null },
         { "id": "phantom", "title": "Phantom types", "children": [
             { "id": "units", "title": "Unit conversions", "children": null }
         ] }
@@ -109,7 +110,6 @@
     { "id": "trait", "title": "Traits", "children": [
         { "id": "derive", "title": "Derive", "children": null },
         { "id": "ops", "title": "Operator Overloading", "children": null },
-        { "id": "bounds", "title": "Bounds", "children": null },
         { "id": "drop", "title": "Drop", "children": null },
         { "id": "iter", "title": "Iterators", "children": null },
         { "id": "clone", "title": "Clone", "children": null }
