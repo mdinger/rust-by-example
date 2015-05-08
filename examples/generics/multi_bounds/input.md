@@ -1,5 +1,5 @@
-Multiple bounds can be applied with a `+`. Multiple types can be separated
-with a `,`.
+Multiple bounds can be applied with a `+`. Like normal, different types are
+separated with `,`.
 
 {multi.play}
 
