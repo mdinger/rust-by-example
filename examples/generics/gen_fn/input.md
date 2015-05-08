@@ -10,6 +10,7 @@ the call. An explicitly specialized function call looks like:
 
 ### See also:
 
-[functions][fn]
+[functions][fn] and [`struct`s][structs]
 
 [fn]: /fn.html
+[structs]: /custom_types/structs.html

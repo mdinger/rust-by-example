@@ -11,8 +11,8 @@ fn printer<T: Display>(t: T) {
 }
 ```
 
-Bounding allows generic instances to access the methods of the traits
-specified in the bounds. For example:
+One consequence of this is it allows generic instances to access the methods
+of the traits specified in the bounds. For example:
 
 {bounds.play}
 
@@ -27,3 +27,10 @@ struct S<T: Display>(T);
 let s = S(vec![1]);
 ```
 
+### See also:
+
+[`std::fmt`][fmt], [`struct`s][structs], and [`trait`s][traits]
+
+[fmt]: /hello/print.html
+[structs]: /custom_types/structs.html
+[traits]: /trait.html
