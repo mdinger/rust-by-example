@@ -89,6 +89,7 @@
             { "id": "testcase_empty", "title": "Testcase: empty bounds", "children": null }
         ] },
         { "id": "multi_bounds", "title": "Multiple bounds", "children": null },
+        { "id": "where", "title": "Where clauses", "children": null },
         { "id": "phantom", "title": "Phantom types", "children": [
             { "id": "units", "title": "Unit conversions", "children": null }
         ] }
