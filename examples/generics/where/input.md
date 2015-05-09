@@ -20,7 +20,8 @@ following example cannot be directly expressed without a `where` clause:
 
 ### See also:
 
-[`struct`s][structs] and [`trait`s][traits]
+[RFC], [`struct`s][structs], and [`trait`s][traits]
 
 [structs]: /custom_types/structs.html
 [traits]: /trait.html
+[where]: https://github.com/rust-lang/rfcs/blob/master/text/0135-where.md
