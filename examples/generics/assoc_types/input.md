@@ -11,5 +11,5 @@ following sections.
 ### See also:
 
 [RFC](
-https://github.com/aturon/rfcs/blob/associated-items/active/0000-associated-items.md
+https://github.com/rust-lang/rfcs/blob/master/text/0195-associated-items.md
 )
