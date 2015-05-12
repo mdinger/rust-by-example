@@ -9,9 +9,9 @@ users of the `trait` regardless of need to explicitly state *all* the
 
 {verbosity.play}
 
-The problem is we require a way to express that `A` and `B` are internal
-to the trait. Having to express them externally is just hindering.
-Associated types allows exactly that.
+The problem is we require a way to express that `A` and `B` are determined
+by the *input* `C`. Having to express them *input* parameters is just
+hindering. Associated types provides exactly that capability.
 
 ### See also:
 

@@ -13,7 +13,9 @@ trait Contains {
 }
 
 impl Contains for Container {
-    // Specify what types `A` and `B` are.
+    // Specify what types `A` and `B` are. If the `input` type
+    // is `Container(i32, i32)`, the `output` types are determined
+    // as `i32` and `i32`.
     type A = i32;
     type B = i32;
 
