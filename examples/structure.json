@@ -95,6 +95,7 @@
             { "id": "verbosity", "title": "Verbosity", "children": null },
             { "id": "only_input", "title": "Only input", "children": null },
             { "id": "internal_types", "title": "AT: Internal types", "children": null },
+            { "id": "constrain", "title": "Constraining", "children": null }
         ] },
         { "id": "phantom", "title": "Phantom types", "children": [
             { "id": "units", "title": "Unit conversions", "children": null }
