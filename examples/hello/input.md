@@ -1,3 +1,5 @@
+% Hello
+
 This is the source code of the traditional Hello World program.
 
 {hello.play}
