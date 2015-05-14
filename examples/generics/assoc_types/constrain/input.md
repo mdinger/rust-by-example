@@ -25,4 +25,6 @@ fn apply_eq_shorthand<C>(c: C) where
     C: Contains<A = i32> { ... }
 ```
 
+The full example:
+
 {constrain.play}

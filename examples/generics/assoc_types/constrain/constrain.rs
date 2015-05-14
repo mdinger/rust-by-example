@@ -2,9 +2,10 @@ use std::fmt::Display;
 
 struct Container<T>(T);
 
+// Trait returns whatever is inside.
 trait Contains {
     type A;
-
+    // Return inner element.
     fn inner(&self) -> Self::A;
 }
 
@@ -14,6 +15,7 @@ impl<T: Clone> Contains for Container<T> {
     fn inner(&self) -> Self::A {
         let Container(ref i) = *self;
 
+        // Clone to prevent move.
         i.clone()
     }
 }
