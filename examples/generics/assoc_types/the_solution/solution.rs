@@ -21,22 +21,13 @@ impl Contains for Container {
 
     // `&Self::A` and `&self::B` are also valid here.
     fn contains(&self, number: &i32, digit: &i32) -> bool {
-        let Container(ref n, ref d) = *self;
-
-        (n == number) && (d == digit)
+        (&self.0 == number) && (&self.1 == digit)
     }
     // Grab the first number.
-    fn first(&self) -> i32 {
-        let Container(n, _) = *self;
+    fn first(&self) -> i32 { self.0 }
 
-        n
-    }
     // Grab the last number.
-    fn last(&self) -> i32 {
-        let Container(_, d) = *self;
-
-        d
-    }
+    fn last(&self) -> i32 { self.1 }
 }
 
 fn difference<C: Contains>(container: &C) -> i32 {
