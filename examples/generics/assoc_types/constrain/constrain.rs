@@ -12,12 +12,8 @@ trait Contains {
 impl<T: Clone> Contains for Container<T> {
     type A = T;
 
-    fn inner(&self) -> Self::A {
-        let Container(ref i) = *self;
-
-        // Clone to prevent move.
-        i.clone()
-    }
+    // Clone to prevent move.
+    fn inner(&self) -> Self::A { self.0.clone() }
 }
 
 // Bounds on associated types.

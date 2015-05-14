@@ -32,9 +32,6 @@ fn main() {
     let number = 3;
     let digit = 10;
 
-    // `container` will be the `input` type. When a method is called
-    // on `container`, `A` and `B` will be determined immediately
-    // because they're internal to `container`.
     let container = Container(number, digit);
 
     println!("Does container contain {} and {}: {}",

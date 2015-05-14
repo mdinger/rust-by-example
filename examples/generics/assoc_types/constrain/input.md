@@ -16,7 +16,7 @@ fn apply_bounds<C>(c: C) where
 // Equality is also through the container: `C::A = type`.
 fn apply_eq<C>(c: C) where
     C: Contains,
-    C::A: i32 { ... }
+    C::A = i32 { ... }
 
 // Note: There is no bounds shorthand. Only equality.
 //
