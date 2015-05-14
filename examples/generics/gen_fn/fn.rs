@@ -2,6 +2,9 @@ struct T;         // Concrete type.
 struct S(T)       // Concrete type.
 struct SGen<T>(T) // Generic type.
 
+// These functions all take ownership of the variable passed into
+// them and immediately go out of scope freeing the variable.
+//
 // This has no preceding `<T>` so this must be a regular function.
 fn die_regular(s: S) {}
 
