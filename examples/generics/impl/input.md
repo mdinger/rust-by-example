@@ -18,7 +18,7 @@ Note: Rust does not *currently* allow overlap between implementations. The
 
 {impl.play}
 
-###See also:
+### See also:
 
 [functions returning references][fn], [`impl`][methods], and [`struct`][structs]
 

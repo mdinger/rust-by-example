@@ -1,4 +1,4 @@
-Here is a possible implementation of an `Add` trait utilizing associated
+Here is a possible implementation of an `Add` trait using associated
 types.
 
 {testcase.play}
