@@ -1,25 +1,30 @@
-// A non-copyable type.
+// Non-copyable types.
 struct Empty;
+struct Null;
 
 // A trait generic over `T`.
-trait Die<T> {
-    // It defines a method on the caller type.
-    fn die(self);
+trait DoubleDrop<T> {
+    // It defines a method on the caller type which takes an
+    // additional single parameter and does nothing with it.
+    fn double_drop(self, _: T);
 }
 
-// Implement `Die<T>` for any generic `T`.
-impl<T> Die<T> for T {
-    // This method takes ownership of the caller and then exits;
-    // essentially deallocating the caller.
-    fn die(self) {}
+// Implement `DoubleDrop<T>` for any generic parameter `T` and
+// caller `U`.
+impl<T, U> DoubleDrop<T> for U {
+    // This method takes ownership of both passed arguments,
+    // deallocating both.
+    fn double_drop(self, _: T) {}
 }
 
 fn main() {
     let empty = Empty;
+    let null  = Null;
 
-    // Deallocate empty.
-    empty.die();
+    // Deallocate `empty` and `null`.
+    empty.double_drop(null);
 
     //empty;
-    // ^ TODO: Try uncommenting this line.
+    //null;
+    // ^ TODO: Try uncommenting these lines.
 }
