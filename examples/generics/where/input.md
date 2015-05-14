@@ -20,7 +20,7 @@ following example cannot be directly expressed without a `where` clause:
 
 ### See also:
 
-[RFC], [`struct`s][structs], and [`trait`s][traits]
+[RFC][where], [`struct`s][structs], and [`trait`s][traits]
 
 [structs]: /custom_types/structs.html
 [traits]: /trait.html
