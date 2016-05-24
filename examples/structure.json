@@ -69,12 +69,6 @@
         ] },
         { "id": "hof", "title": "Higher Order Functions", "children": null }
     ] },
-    { "id": "macros", "title": "macro_rules!", "children": [
-        { "id": "designators", "title": "Designators", "children": null },
-        { "id": "overload", "title": "Overload", "children": null },
-        { "id": "repeat", "title": "Repeat", "children": null },
-        { "id": "dry", "title": "DRY (Don't Repeat Yourself)", "children": null }
-    ] },
     { "id": "mod", "title": "Modules", "children": [
         { "id": "visibility", "title": "Visibility", "children": null },
         { "id": "struct_visibility", "title": "Struct visibility", "children": null },
@@ -139,13 +133,20 @@
         { "id": "iter", "title": "Iterators", "children": null },
         { "id": "clone", "title": "Clone", "children": null }
     ] },
+    { "id": "macros", "title": "macro_rules!", "children": [
+        { "id": "designators", "title": "Designators", "children": null },
+        { "id": "overload", "title": "Overload", "children": null },
+        { "id": "repeat", "title": "Repeat", "children": null },
+        { "id": "dry", "title": "DRY (Don't Repeat Yourself)", "children": null }
+    ] },
     { "id": "error", "title": "Error handling", "children": [
         { "id": "unwrap", "title": "Option & unwrap", "children": null },
         { "id": "map", "title": "map", "children": null },
-        { "id": "more_combinators", "title": "More combinators", "children": null },
-        { "id": "error_vs_absence", "title": "Errors vs Absence", "children": null },
-        { "id": "result_map", "title": "map for Result", "children": null },
-        { "id": "result_alias", "title": "Result as an alias", "children": null },
+        { "id": "and_then", "title": "and_then", "children": null },
+        { "id": "result", "title": "Result", "children": [
+            { "id": "result_map", "title": "map for Result", "children": null },
+            { "id": "result_alias", "title": "aliases for Result", "children": null }
+        ] }, 
         { "id": "option_with_result", "title": "Options with Results", "children": [
             { "id": "result_string_errors", "title": "Errors as strings", "children": null },
             { "id": "combinator_combinations", "title": "Combining separate combinators", "children": null },
